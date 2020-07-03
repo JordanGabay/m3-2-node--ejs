@@ -13,6 +13,20 @@
       <%- include('../partials/questions/5') %>
       <div class="box answer">
         <h3>Answer</h3>
+        <div class=box>
+        <h3>Top 5 girls names in the England and Wales</h3>
+        <!-- <ul list-style-type = 'none'>
+        <li> 1. <%- //topFive[0] %></li>
+        <li> 2. <%- //topFive[1] %></li>
+        <li> 3. <%- //topFive[2] %></li>
+        <li> 4. <%- //topFive[3] %></li>
+        <li> 5. <%- //topFive[4] %></li>
+        </ul> -->
+        <% popularGirlNames.forEach((name, id) => { %>
+          <li><%= id + 1 %>. <%= name %></li>
+          <% }); %>
+        </div>
+        <!-- Did 2 ways to solve the question... 1 with forEach and the other by creating a list manually.  -->
         <!-- render answer here -->
       </div>
     </div>

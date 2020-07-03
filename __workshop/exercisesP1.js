@@ -54,8 +54,11 @@ const q4 = (req, res) => {
 // -----------------------------------------------
 const q5 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
-
-  res.render('pages/question5');
+  // const topFive = popularGirlNames.splice(0,5);
+  //^This way is what I used to originally solve it^^//
+  // res.render('pages/question5', {topFive: topFive});
+  res.render('pages/question5', {popularGirlNames: popularGirlNames});
+  //This is the way to do it forEach
 };
 
 // We export the functions so that they may be 'required' or imported in other files.
