@@ -42,9 +42,12 @@ const q3 = (req, res) => {
 // -----------------------------------------------
 const q4 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
+  const topThree = popularGirlNames.splice(0,3);
 
-  res.render('pages/question4');
+  res.render('pages/question4', {topThree: topThree});
 };
+
+// For this exercise you need to create another const (topThree) for the original const. Use splice to change the contents of the array and then continue from previous exercises. 
 
 // -----------------------------------------------
 // Question 5
