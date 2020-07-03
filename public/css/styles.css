@@ -55,3 +55,9 @@ ol, ul { margin-bottom: 1em; }
 .box {
     border: 1px solid lightgrey
 }
+
+.navi {
+    align-items: center;
+    text-align: center;
+    padding:5em;
+}
